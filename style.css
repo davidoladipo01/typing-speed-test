@@ -4,7 +4,9 @@
   box-sizing: border-box;
 }
 
-button, input {
+button,
+input {
   font-family: inherit; /* Keep your font */
   font-size: inherit; /* Keep your font size */
 }
+
