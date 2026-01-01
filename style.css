@@ -10,3 +10,105 @@ input {
   font-size: inherit; /* Keep your font size */
 }
 
+:root {
+  /* Neutral Colors */
+  --neutral-900: hsl(0, 0%, 7%);
+  --neutral-800: hsl(0, 0%, 15%);
+  --neutral-500: hsl(240, 3%, 46%);
+  --neutral-400: hsl(240, 1%, 59%);
+  --neutral-0: hsl(0, 0%, 100%);
+
+  /* Blue Colors */
+  --blue-600: hsl(214, 100%, 55%);
+  --blue-400: hsl(210, 100%, 65%);
+
+  /* Red & Green */
+  --red-500: hsl(354, 63%, 57%);
+  --green-500: hsl(140, 63%, 57%);
+
+  /* Yellow */
+  --yellow-400: hsl(49, 85%, 70%);
+
+  /* === TYPOGRAPHY === */
+
+  /* Font */
+  --font-family: "Sora", sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* ===== MOBILE TYPOGRAPHY ===== */
+  /* ===== TYPOGRAPHY - MOBILE FIRST ===== */
+  --title-size: 24px; /* Text Preset 1 (Mobile) */
+  --title-line-height: 120%;
+  --title-letter-spacing: 0.32px;
+
+  --passage-size: 16px; /* Text Preset 3 (Mobile) */
+  --passage-line-height: 120%;
+  --passage-letter-spacing: -0.48px;
+
+  --stats-size: 24px; /* Text Preset 2 */
+  --stats-line-height: 100%;
+  --stats-letter-spacing: 0px;
+
+  --button-size: 20px; /* Text Preset 3 (SemiBold) */
+  --button-line-height: 120%;
+  --button-letter-spacing: -0.3px;
+
+  --label-size: 12px; /* Text Preset 6 */
+  --label-line-height: 120%;
+  --label-letter-spacing: 0px;
+
+  /* ===== SPACING SYSTEM (from Figma) ===== */
+  --spacing-0: 0;
+  --spacing-25: 2px;
+  --spacing-50: 4px;
+  --spacing-75: 6px;
+  --spacing-100: 8px;
+  --spacing-125: 10px;
+  --spacing-150: 12px;
+  --spacing-200: 16px;
+  --spacing-250: 20px;
+  --spacing-300: 24px;
+  --spacing-400: 32px;
+  --spacing-500: 40px;
+  --spacing-600: 48px;
+  --spacing-800: 64px;
+  --spacing-1000: 80px;
+  --spacing-1200: 96px;
+  --spacing-1400: 112px;
+  --spacing-1600: 128px;
+  --spacing-1800: 140px;
+
+  /* =====radius values====== */
+  --radius-0: 0;
+  --radius-4: 4px;
+  --radius-6: 6px;
+  --radius-8: 8px;
+  --radius-10: 10px;
+  --radius-12: 12px;
+  --radius-16: 16px;
+  --radius-20: 20px;
+  --radius-24: 24px;
+  --radius-full: 999px;
+
+  /* Tablet */
+  @media (min-width: 768px) {
+    :root {
+      --title-size: 32px;
+      --title-line-height: 136%;
+
+      --passage-size: 18px;
+    }
+  }
+
+  /* Desktop */
+  @media (min-width: 1440px) {
+    :root {
+      --title-size: 40px;
+
+      --passage-size: 40px;
+      --passage-line-height: 136%;
+    }
+  }
+}
