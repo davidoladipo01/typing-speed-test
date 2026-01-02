@@ -15,19 +15,98 @@
 </head>
 
 <body>
+
+
     <!-- Navbar -->
-    <nav class="navbar nav">
+    <nav class="navsbar">
         <div>
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="./assets/images/logo-small.svg" alt="logo">
+            <div class="/nav-brand">
+                <a class="" href="#">
+                    <img src="./assets/images/logo-small.svg" alt="logo" width="32px" height="32px">
                 </a>
             </div>
-
-            
         </div>
 
+        <div class="pbt">
+            <img src="./assets/images/icon-personal-best.svg" alt="" width="18px" height="16px">
+            <div>
+                <span style="color: var(--neutral-400);" class="">Best:
+                    <span style="color: var(--neutral-0);">92 WPM</span>
+                </span>
+            </div>
+        </div>
     </nav>
+
+    <section class="landing">
+        <div>
+            <div>
+                <div class="stat-container">
+                    <div class="wpm" style="color: var(--neutral-400);">
+                        WPM:
+                        <div class="wpm-no" style="color: var(--neutral-0);" id="wpm">0
+                        </div>
+                        <div class="line"></div>
+                    </div>
+
+                    <div class="accuracy" style="color: var(--neutral-400);">
+                        Accuracy:
+                        <div class="accuracy-no" style="color: var(--neutral-0);" id="accuracy">100%
+                        </div>
+                        <div class="line2"></div>
+                    </div>
+
+                    <div class="time" style="color: var(--neutral-400);">
+                        Time:
+                        <div class="time-no" style="color: var(--neutral-0);" id="time">0:60
+                        </div>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <div class="">
+                        <button class="difficulty-selector" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Hard
+                            <img src="./assets/images/icon-down-arrow.svg" alt="">
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item">
+
+                                <input type="checkbox" name="" id="">Easy
+                            </li>
+                            <li class="dropdown-item">
+                                <input type="checkbox" name="" id=""> Medium
+                            </li>
+                            <li class="dropdown-item">
+                                <input type="checkbox" name="" id="">Hard
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="">
+                        <button class="difficulty-selector" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Timed(60s)
+                            <img src="./assets/images/icon-down-arrow.svg" alt="">
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item">
+
+                                <input type="checkbox" name="" id="">
+                            </li>
+                            <li class="dropdown-item">
+                                <input type="checkbox" name="" id="">
+                            </li>
+                            <li class="dropdown-item">
+                                <input type="checkbox" name="" id="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 

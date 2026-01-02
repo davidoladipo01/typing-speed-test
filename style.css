@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+body{
+  font-family: var(--font-family);
+  background-color: var(--neutral-900)!important;
+}
+
 button,
 input {
   font-family: inherit; /* Keep your font */
@@ -61,24 +66,24 @@ input {
 
   /* ===== SPACING SYSTEM (from Figma) ===== */
   --spacing-0: 0;
-  --spacing-25: 2px;
-  --spacing-50: 4px;
-  --spacing-75: 6px;
-  --spacing-100: 8px;
-  --spacing-125: 10px;
-  --spacing-150: 12px;
-  --spacing-200: 16px;
-  --spacing-250: 20px;
-  --spacing-300: 24px;
-  --spacing-400: 32px;
-  --spacing-500: 40px;
-  --spacing-600: 48px;
-  --spacing-800: 64px;
-  --spacing-1000: 80px;
-  --spacing-1200: 96px;
-  --spacing-1400: 112px;
-  --spacing-1600: 128px;
-  --spacing-1800: 140px;
+  --spacing-2: 2px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-96: 96px;
+  --spacing-112: 112px;
+  --spacing-128: 128px;
+  --spacing-140: 140px;
 
   /* =====radius values====== */
   --radius-0: 0;
@@ -112,3 +117,135 @@ input {
     }
   }
 }
+
+.navsbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 16px 0px 26px;
+}
+
+.pbt{
+    display: flex;
+  align-items: center;
+  gap: var(--spacing-10);
+}
+
+.landing{
+  padding: var(--spacing-32) var(--spacing-16) 26px;
+}
+
+.stat-container{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--spacing-20);
+  justify-content: space-evenly;
+}
+
+.wpm{
+  font-size: var(--passage-size);
+  line-height: var(--passage-line-height);
+  letter-spacing: var(--passage-letter-spacing);
+}
+
+.wpm-no{
+  font-weight: var(--font-weight-bold);
+  margin-top: var(--spacing-8);
+  font-size: var(--stats-size);
+  line-height: var(--stats-line-height);
+  letter-spacing: var(--stats-letter-spacing);
+  text-align: center;
+   /* max-width: 36px; */
+}
+
+.accuracy{
+  font-size: var(--passage-size);
+  line-height: var(--passage-line-height);
+  letter-spacing: var(--passage-letter-spacing);
+}
+
+.accuracy-no{
+  font-weight: var(--font-weight-bold);
+    margin-top: var(--spacing-8);
+  font-size: var(--stats-size);
+  line-height: var(--stats-line-height);
+  letter-spacing: var(--stats-letter-spacing);
+  text-align: center;
+   /* max-width: 36px; */
+}
+
+.time{
+  font-size: var(--passage-size);
+  line-height: var(--passage-line-height);
+  letter-spacing: var(--passage-letter-spacing);
+}
+
+.time-no{
+    margin-top: var(--spacing-8);
+    font-weight: var(--font-weight-bold);
+  font-size: var(--stats-size);
+  line-height: var(--stats-line-height);
+  letter-spacing: var(--stats-letter-spacing);
+  text-align: center;
+   /* max-width: 36px; */
+}
+
+.line {
+  position: absolute;
+  top: 10%;
+  left: 29%;
+    display: block;
+    height: 51px;
+    width: 1px;
+    background: var(--neutral-800);
+
+}  
+
+.line2 {
+  position: absolute;
+  top: 10%;
+  left: 68%;
+    display: block;
+    height: 51px;
+    width: 1px;
+    background: var(--neutral-800);
+}  
+
+.control-group{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-10);
+  margin-top: var(--spacing-16);}
+
+  .difficulty-selector{
+    text-align: center;
+    background-color:transparent;
+    color: var(--neutral-0);
+    border: 1px solid var(--neutral-500);
+    /* padding: 10px 6px; */
+    border-radius: var(--radius-8);
+    font-size: var(--passage-size);
+    line-height: var(--passage-line-height);
+    letter-spacing: var(--passage-letter-spacing);
+    font-weight: var(--font-weight-regular);
+    cursor: pointer;
+    width: 140px;
+    height: 31px;
+}
+
+.dropdown-menu{
+  background-color: var(--neutral-800)!important;
+  
+}
+
+.dropdown-item{
+  color: var(--neutral-0)!important;
+  font-size: var(--passage-size)!important;
+  line-height: var(--passage-line-height)!important;
+  letter-spacing: var(--passage-letter-spacing)!important;
+  padding: var(--spacing-8) var(--spacing-16)!important;
+  cursor: pointer;
+}!important
