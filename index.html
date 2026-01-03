@@ -63,7 +63,8 @@
                 </div>
 
                 <div class="control-group">
-                    <div class="">
+                    <div class="dropdown">
+                        <!-- Difficulty Dropdown -->
                         <button class="difficulty-selector" type="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Hard
@@ -71,14 +72,22 @@
                         </button>
                         <ul class="dropdown-menu">
                             <li class="dropdown-item">
-
-                                <input type="checkbox" name="" id="">Easy
+                                <input type="radio" name="difficulty" id="difficulty-easy" value="easy">
+                                <label for="difficulty-easy">Easy</label>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
                             </li>
                             <li class="dropdown-item">
-                                <input type="checkbox" name="" id=""> Medium
+                                <input type="radio" name="difficulty" id="difficulty-medium" value="medium">
+                                <label for="difficulty-medium">Medium</label>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
                             </li>
                             <li class="dropdown-item">
-                                <input type="checkbox" name="" id="">Hard
+                                <input type="radio" name="difficulty" id="difficulty-hard" value="hard" checked>
+                                <label for="difficulty-hard">Hard</label>
                             </li>
                         </ul>
                     </div>
@@ -92,14 +101,15 @@
                         </button>
                         <ul class="dropdown-menu">
                             <li class="dropdown-item">
-
-                                <input type="checkbox" name="" id="">
+                                <input type="radio" name="time" id="time-60s" value="60">
+                                <label for="time-60s">Timed(60s)</label>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
                             </li>
                             <li class="dropdown-item">
-                                <input type="checkbox" name="" id="">
-                            </li>
-                            <li class="dropdown-item">
-                                <input type="checkbox" name="" id="">
+                                <input type="radio" name="time" id="time-unlimited" value="unlimited">
+                                <label for="passage">Passage</label>
                             </li>
                         </ul>
                     </div>

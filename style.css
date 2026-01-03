@@ -199,9 +199,8 @@ input {
     display: block;
     height: 51px;
     width: 1px;
-    background: var(--neutral-800);
-
-}  
+    background: #3a3a3a;
+}
 
 .line2 {
   position: absolute;
@@ -210,7 +209,7 @@ input {
     display: block;
     height: 51px;
     width: 1px;
-    background: var(--neutral-800);
+    background: #3a3a3a;
 }  
 
 .control-group{
@@ -218,7 +217,8 @@ input {
   align-items: center;
   justify-content: center;
   gap: var(--spacing-10);
-  margin-top: var(--spacing-16);}
+  margin-top: var(--spacing-16);
+}
 
   .difficulty-selector{
     text-align: center;
@@ -237,15 +237,75 @@ input {
 }
 
 .dropdown-menu{
+  min-width:140px!important;
   background-color: var(--neutral-800)!important;
-  
+  padding: 0px 10px!important;
+  border-radius: var(--radius-8)!important;
+  display: flex;
+  align-items: center;
+  justify-content: start!important;
+  gap:var(--spacing-8)!important;
 }
 
-.dropdown-item{
+.dropdown-item {
+  display: flex!important;
+  align-items: center!important;  
+  gap: var(--spacing-12);
+  padding: 10px 0px 8px 0px!important;
+  /* text-align: center; */
   color: var(--neutral-0)!important;
   font-size: var(--passage-size)!important;
   line-height: var(--passage-line-height)!important;
   letter-spacing: var(--passage-letter-spacing)!important;
+  font-weight: var(--font-weight-regular)!important;
   padding: var(--spacing-8) var(--spacing-16)!important;
   cursor: pointer;
-}!important
+}
+
+.dropdown-item:hover {
+  background-color: transparent!important;
+}
+
+/* input[type="radio"] {
+  accent-color: var(--blue-400) ;
+  background: var(--neutral-800)!important;
+  color: transparent!important;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+} */
+ /* Force radio styling */
+.dropdown-item input[type="radio"] {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  width: 16px !important;
+  height: 16px !important;
+  border: 1px solid #D1D5DB !important;
+  border-radius: 999px !important;
+  background: transparent !important; /* Your color */
+  cursor: pointer !important;
+  position: relative !important;
+}
+
+/* Checked state */
+.dropdown-item input[type="radio"]:checked {
+  background: var(--blue-400) !important;
+  border-color: var(--blue-400) !important;
+}
+
+/* White dot */
+.dropdown-item input[type="radio"]:checked::after {
+  content: '' !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  width: 6px !important;
+  height: 6px !important;
+  background: var(--neutral-900)  !important;
+  border-radius: 50% !important;
+}
+
+.dropdown-divider{
+  background-color: #3a3a3a!important;
+}
