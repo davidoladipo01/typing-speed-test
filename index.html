@@ -117,6 +117,17 @@
             </div>
         </div>
     </section>
+    <div class="line3"></div>
+    <section class="passage container">
+        <div>
+            <p class="text-start passage-text" id="textdisplay"></p>
+        </div>
+
+        <div id="overlay" class="blur-overlay">
+            <button class="btn btn-primary" id="start-btn">Start Typing Test</button>
+            <p class="start-txt">Or click the text and start typing</p>
+        </div>
+    </section>
 
 
 
@@ -127,6 +138,26 @@
         <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
         Coded by <a href="#">Your Name Here</a>.
     </div> -->
+
+    <script>
+        const textdisplay = document.getElementById('textdisplay');
+        async function loadTypingText() {
+            try {
+                const response = await fetch('data.json');
+                const data = await response.json();
+                const texts = data.easy;
+                const randomIndex = Math.floor(Math.random() * texts.length);
+                console.log("This is what I found:", texts[randomIndex].text);
+                textdisplay.innerText = texts[randomIndex].text;
+            }
+
+            catch (error) {
+                console.error("error fetching the json data:", error);
+            }
+        }
+        loadTypingText();
+    </script>
+
 
 
     <script src="./script.js"></script>
