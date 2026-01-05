@@ -68,26 +68,26 @@
                         <button class="difficulty-selector" type="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Hard
-                            <img src="./assets/images/icon-down-arrow.svg" alt="">
+                            <img class="diff-img" src="./assets/images/icon-down-arrow.svg" alt="">
                         </button>
                         <ul class="dropdown-menu">
                             <li class="dropdown-item">
                                 <input type="radio" name="difficulty" id="difficulty-easy" value="easy">
-                                <label for="difficulty-easy">Easy</label>
+                                <label class="label" for="difficulty-easy">Easy</label>
                             </li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
                             <li class="dropdown-item">
                                 <input type="radio" name="difficulty" id="difficulty-medium" value="medium">
-                                <label for="difficulty-medium">Medium</label>
+                                <label class="label" for="difficulty-medium">Medium</label>
                             </li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
                             <li class="dropdown-item">
                                 <input type="radio" name="difficulty" id="difficulty-hard" value="hard" checked>
-                                <label for="difficulty-hard">Hard</label>
+                                <label class="label" for="difficulty-hard">Hard</label>
                             </li>
                         </ul>
                     </div>
@@ -97,12 +97,12 @@
                         <button class="difficulty-selector" type="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Timed(60s)
-                            <img src="./assets/images/icon-down-arrow.svg" alt="">
+                            <img class="diff-img" src="./assets/images/icon-down-arrow.svg" alt="">
                         </button>
                         <ul class="dropdown-menu">
                             <li class="dropdown-item">
                                 <input type="radio" name="time" id="time-60s" value="60">
-                                <label for="time-60s">Timed(60s)</label>
+                                <label class="label" for="time-60s">Timed(60s)</label>
                             </li>
                             <li>
                                 <hr class="dropdown-divider">
@@ -124,7 +124,7 @@
         </div>
 
         <div id="overlay" class="blur-overlay">
-            <button class="btn btn-primary" id="start-btn">Start Typing Test</button>
+            <button class="start" id="start-btn">Start Typing Test</button>
             <p class="start-txt">Or click the text and start typing</p>
         </div>
     </section>

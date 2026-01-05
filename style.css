@@ -235,6 +235,22 @@ input {
   margin-bottom: -7px;
 }
 
+.difficulty-selector:hover {
+  transition: all 0.5s ease!important;
+  border-color: var(--blue-400);
+  color: var(--blue-400);
+}
+
+.difficulty-selector:hover .diff-img {
+  transition: all 0.1ms ease!important;
+  filter: invert(54%) sepia(88%) saturate(1557%) hue-rotate(186deg) brightness(102%) contrast(101%);
+}
+
+.label:hover {
+  cursor: pointer;
+  color: var(--neutral-0);
+}
+
 .dropdown-menu {
   min-width: 148px !important;
   background-color: var(--neutral-800) !important;
@@ -262,7 +278,9 @@ input {
 }
 
 .dropdown-item:hover {
+  transition: all 0.3s ease !important;
   background-color: transparent !important;
+  color: var(--blue-400) !important;
 }
 
 /* Force radio styling */
@@ -295,6 +313,11 @@ input {
   height: 6px !important;
   background: var(--neutral-900) !important;
   border-radius: 50% !important;
+}
+
+.dropdown-item input[type="radio"]:checked:focus{
+    outline: 2px solid black; /* Blue ring appears */
+    box-shadow: 0 0 0 3px var(--blue-400);
 }
 
 .dropdown-divider {
@@ -352,11 +375,15 @@ input {
   font-size: var(--button-size)!important;
   line-height: var(--button-line-height)!important;
   letter-spacing: var(--button-letter-spacing)!important;
-  font-weight: var(--font-weight-semibold)!important;
+  font-weight: var(--font-weight-regular)!important;
   cursor: pointer;
   margin-bottom: 12px!important;
 }
 
+.start:hover{
+  transition: background-color 0.5s ease!important;
+  background-color: var(--blue-400)!important;
+}
 
 .start-txt{
   font-size: var(--passage-size);
