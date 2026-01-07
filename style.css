@@ -356,6 +356,11 @@ input {
   /* The Blur Effect */
   backdrop-filter: blur(10px); 
   -webkit-backdrop-filter: blur(10px); /* For Safari support */
+
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+
+    opacity: 1;
+  visibility: visible;
   
   /* Center the button */
   display: flex;
@@ -363,8 +368,14 @@ input {
   justify-content: center;
   align-items: center;
   border-radius: 8px;
-  transition: opacity 0.3s ease; 
 }
+
+.blur-overlay.hidden {
+  opacity: 0;
+  visibility: hidden;
+  /* Note: We're fading out instead of instantly hiding */
+}
+
 
 .start{
   background-color: var(--blue-600)!important;
